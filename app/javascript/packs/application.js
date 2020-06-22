@@ -24,6 +24,8 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';

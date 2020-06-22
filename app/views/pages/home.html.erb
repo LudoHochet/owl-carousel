@@ -1,2 +1,31 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+<h5>test owl.carousel</h5>
+<p>hello</p>
+<div class="owl-carousel">
+  <h2>UN</h2>
+  <h2>DEUX</h2>
+  <h2>TROIS</h2>
+  <h2>QUATRE</h2>
+  <h2>CINQ</h2>
+</div>
+
+<%= content_for(:after_js) do %>
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      stagePadding: 50,
+      loop: true,
+      margin:10,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:3
+        }
+      }
+    });
+  });
+</script>
+<% end %>

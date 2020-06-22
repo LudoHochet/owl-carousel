@@ -26,6 +26,8 @@ require("channels")
 import "bootstrap";
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
+import JQuery from 'jquery';
+window.$ = window.JQuery = JQuery;
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
